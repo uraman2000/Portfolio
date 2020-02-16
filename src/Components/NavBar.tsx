@@ -58,7 +58,7 @@ export default function NavBar(props: Props) {
         <AppBar>
           <Toolbar>
             <Typography variant="h6" style={{ flex: 1 }}>
-              <Button href={""}>
+              <Button href={"#"}>
                 <CardMedia style={{ height: 50, width: 50, backgroundSize: "contain" }} image={logo} />
               </Button>
             </Typography>
