@@ -7,8 +7,8 @@ import useScrollTrigger from "@material-ui/core/useScrollTrigger";
 import Box from "@material-ui/core/Box";
 import Container from "@material-ui/core/Container";
 import Slide from "@material-ui/core/Slide";
-import { Link, Button } from "@material-ui/core";
-
+import { Link, Button, CardMedia } from "@material-ui/core";
+import logo from "../assets/pol-logo.png";
 interface Props {
   /**
    * Injected by the documentation to work in an iframe.
@@ -58,13 +58,19 @@ export default function NavBar(props: Props) {
         <AppBar>
           <Toolbar>
             <Typography variant="h6" style={{ flex: 1 }}>
-              Pol Imbing
+              <Button href={""}>
+                <CardMedia style={{ height: 50, width: 50, backgroundSize: "contain" }} image={logo} />
+              </Button>
             </Typography>
             {links.map((item: any, key: any) => (
               <Button key={key} href={item.link} color="inherit">
                 {item.label}
               </Button>
             ))}
+
+            <Button variant="outlined" color="inherit">
+              Resume
+            </Button>
           </Toolbar>
         </AppBar>
       </HideOnScroll>
