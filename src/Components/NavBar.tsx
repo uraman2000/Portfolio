@@ -58,7 +58,7 @@ export default function NavBar(props: Props) {
         <AppBar>
           <Toolbar>
             <Typography variant="h6" style={{ flex: 1 }}>
-              Pol Imbing
+              Pol Imbing test
             </Typography>
             {links.map((item: any, key: any) => (
               <Button key={key} href={item.link} color="inherit">
