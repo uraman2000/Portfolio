@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Paper, Card, CardContent, Typography, Grid, ButtonBase } from "@material-ui/core";
+import { Container, Paper, Card, CardContent, Typography, Grid, ButtonBase, CardActionArea } from "@material-ui/core";
 import Title from "./Title";
 import { lighten, makeStyles, createStyles, Theme, withStyles } from "@material-ui/core/styles";
 
@@ -34,7 +34,7 @@ export default function Projects() {
         {data.map((item: any, key: any) => (
           <Grid item md={4} key={key}>
             <Card>
-              <ButtonBase className={classes.cardAction}>
+              <CardActionArea>
                 <CardContent>
                   <Typography variant="h5" component="h2">
                     {item.title}
@@ -47,7 +47,7 @@ export default function Projects() {
                     {item.builtWith}
                   </Typography>
                 </CardContent>
-              </ButtonBase>
+              </CardActionArea>
             </Card>
           </Grid>
         ))}

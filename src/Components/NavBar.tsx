@@ -9,6 +9,7 @@ import Container from "@material-ui/core/Container";
 import Slide from "@material-ui/core/Slide";
 import { Link, Button, CardMedia } from "@material-ui/core";
 import logo from "../assets/pol-logo.png";
+
 interface Props {
   /**
    * Injected by the documentation to work in an iframe.
@@ -68,7 +69,7 @@ export default function NavBar(props: Props) {
               </Button>
             ))}
 
-            <Button variant="outlined" color="inherit">
+            <Button variant="outlined" color="inherit" download href={"/pol-imbing.pdf"}>
               Resume
             </Button>
           </Toolbar>
