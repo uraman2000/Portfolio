@@ -69,7 +69,7 @@ export default function NavBar(props: Props) {
               </Button>
             ))}
 
-            <Button variant="outlined" color="inherit" download href={"/pol-imbing.pdf"}>
+            <Button variant="outlined" color="inherit" download href={"/pol-imbing-v2.pdf"}>
               Resume
             </Button>
           </Toolbar>

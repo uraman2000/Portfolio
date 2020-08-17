@@ -10,9 +10,15 @@ export default function Home() {
       <Typography variant="h2" gutterBottom>
         Pol Maynard Imbing
       </Typography>
-      <Grid item md={5}>
+
+      <Grid item md={8}>
         <Typography variant="subtitle1" gutterBottom>
           I'm a software engineer based in Philippines specializing in websites and Android applications.
+        </Typography>
+      </Grid>
+      <Grid item md={8}>
+        <Typography variant="caption" display="block" gutterBottom>
+          (Sorry the design is awful because im not a desginer 😊)
         </Typography>
       </Grid>
     </>
